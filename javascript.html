@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>number1</h2>
+    <input type="number" placeholder="enter number" id="inp1"/>
+
+    <h2>number2</h2>
+    <input type="number" placeholder="enter number" id="inp2"/>
+<br>
+<br>
+<button onclick="sum()">add</button>
+
+
+<h2>number1</h2>
+<input type="number" placeholder="enter number" id="inp3"/>
+
+<h2>number2</h2>
+<input type="number" placeholder="enter number" id="inp4"/>
+<br>
+<br>
+<button onclick="sum()">subtract</button>
+
+<h2>number1</h2>
+<input type="number" placeholder="enter number" id="inp5"/>
+
+<h2>number2</h2>
+<input type="number" placeholder="enter number" id="inp6"/>
+<br>
+<br>
+<button onclick="sum()">multiplay</button>
+
+</body>
+<script>
+
+
+function sum(){
+    let inp1 = document.getElementById("inp1")
+    let inp2 = document.getElementById("inp2")
+    let inp3 = document.getElementById("inp3")
+    let inp4 = document.getElementById("inp4")
+    let inp5 = document.getElementById("inp5")
+    let inp6 = document.getElementById("inp6")
+
+    let inp1value = inp1.value
+    let inp2value = inp2.value
+    let inp3value = inp3.value
+    let inp4value = inp4.value
+    let inp5value = inp5.value
+    let inp6value = inp6.value
+ 
+ 
+    inp1value  = parseInt(inp1value)
+    inp2value  = parseInt(inp2value)
+    inp3value  = parseInt(inp3value)
+    inp4value  = parseInt(inp4value)
+    inp5value  = parseInt(inp5value)
+    inp6value  = parseInt(inp6value)
+
+
+
+    console.log ( inp1value + inp2value )
+    console.log ( inp3value - inp4value )
+    console.log ( inp5value * inp6value )
+}
+
+
+</script>
+
+
+
+</html>
